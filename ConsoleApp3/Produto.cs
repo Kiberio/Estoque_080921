@@ -19,9 +19,8 @@ namespace ConsoleApp3
             Quantidade = quantidade;
         }
 
-        public produto()
-        {
-
+        //contrutor padrão
+        public produto() { 
         }
 
         //Função para calcular o valor total do estoque

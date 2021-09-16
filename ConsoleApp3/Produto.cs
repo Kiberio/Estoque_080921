@@ -25,25 +25,24 @@ namespace ConsoleApp3
 
         }
 
-        //utilização de GET e Set
-        public string GetNome()
+      public string Nome
         {
-            return _nome;
+            get { return _nome; }
+            set { if(value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
+            }
         }
 
-        public void SetNome(string nome)
+       public double Preco
         {
-            _nome = nome;
+            get { return _preco; }
         }
 
-        public double GetPreco()
+        public int Quantidade
         {
-            return _preco;
-        }
-
-        public int GetQuantidade()
-        {
-            return _quantidade;
+            get { return _quantidade; }
         }
 
         //Função para calcular o valor total do estoque

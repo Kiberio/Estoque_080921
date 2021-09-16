@@ -8,8 +8,8 @@ namespace ConsoleApp3
     {
         //Declaração das variaveis do produto
         private string _nome;
-        private double _preco;
-        private int _quantidade;
+        public double _preco { get; private set;}
+        public int _quantidade { get; private set; }
 
         //Declaração do construtor
         public produto(string nome, double preco, int quantidade)
@@ -33,16 +33,6 @@ namespace ConsoleApp3
                     _nome = value;
                 }
             }
-        }
-
-       public double Preco
-        {
-            get { return _preco; }
-        }
-
-        public int Quantidade
-        {
-            get { return _quantidade; }
         }
 
         //Função para calcular o valor total do estoque

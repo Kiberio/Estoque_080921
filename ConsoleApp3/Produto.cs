@@ -25,22 +25,25 @@ namespace ConsoleApp3
 
         }
 
-        //utilização de GET e Set
+        //Criação de uma função para ler a variavel _nome
         public string GetNome()
         {
             return _nome;
         }
 
+        //Criação de uma função para gravar o coteudo de nome na variavel _nome
         public void SetNome(string nome)
         {
             _nome = nome;
         }
 
+        //Criação de uma função para ler a variavel _preco
         public double GetPreco()
         {
             return _preco;
         }
 
+        //Criação de uma função para ler a variavel _quantidade
         public int GetQuantidade()
         {
             return _quantidade;

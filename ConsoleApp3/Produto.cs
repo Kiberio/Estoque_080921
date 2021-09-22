@@ -27,7 +27,9 @@ namespace ConsoleApp3
 
       public string Nome
         {
+            //Lendo o conteudo de _nome
             get { return _nome; }
+            //Atribuindo o conteudo de value em _nome depois da validação
             set { if(value != null && value.Length > 1)
                 {
                     _nome = value;
@@ -37,11 +39,13 @@ namespace ConsoleApp3
 
        public double Preco
         {
+            //Ler o conteudo de _preco
             get { return _preco; }
         }
 
         public int Quantidade
         {
+            //Ler o conteudo de _quantidade
             get { return _quantidade; }
         }
 

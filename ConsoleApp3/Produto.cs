@@ -8,6 +8,7 @@ namespace ConsoleApp3
     {
         //Declaração das variaveis do produto
         private string _nome;
+        //Declaração de variavel,ler e tornar a variavel private para seguraça
         public double _preco { get; private set;}
         public int _quantidade { get; private set; }
 
@@ -27,7 +28,9 @@ namespace ConsoleApp3
 
       public string Nome
         {
+            //lendo o conteudo da variante _nome
             get { return _nome; }
+            //gravando o conteudo de value em _nome depois da validação
             set { if(value != null && value.Length > 1)
                 {
                     _nome = value;
